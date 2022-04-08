@@ -1,0 +1,49 @@
+
+<style>
+    h1{
+        width: 600px;
+        height: 100px;
+        background-color: lightgray;
+        text-align: center;
+        margin: auto;
+        
+        
+    }
+    
+     .ROOM{  
+         width: 600px; 
+         height: 150px; 
+         background-color: lightgray; 
+         text-align: left; 
+         margin: auto; 
+         
+        
+         
+         
+
+     } 
+     input[type=submit]{
+         width: 600px;
+         background-color: chartreuse;
+     }
+     
+
+    
+    
+
+    
+</style>
+
+<h1>CHAT ROOM</h1>
+<div class="room">
+<form method="POST" action="checkview">
+    {% csrf_token %}
+    <label>Room Name </label><br>
+    <input type="text" name="room_name" id="room_name" size="88" /><br>
+    <label>Username</label><br>
+    <input type="text" name="username" id="username" size="88" /><br><br>
+
+    <input type="submit" value="Enter Room" size="50">
+
+</form>
+</div> 
